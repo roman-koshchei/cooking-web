@@ -8,13 +8,54 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css"
     />
+
     <title>Cooking Web</title>
+    <meta
+      name="description"
+      content="Writings about things that will help you to develop for web. The website aims to be straight to the point instead of poems."
+    />
+
+    <meta name="robots" content="follow, index" />
+    <link rel="canonical" href="https://www.cookingweb.dev/" />
   </head>
   <body>
     <header></header>
     <main class="container">
-      <h1>Time to cook some Web!</h1>
-      <a href="https://twitter.com/roman_koshchei" target="_blank">Author</a>
+      <hgroup>
+        <h1>Time to cook the Web!</h1>
+        <h2>
+          Writings about things that will help you to develop for web. The
+          website aims to be straight to the point instead of poems.
+        </h2>
+      </hgroup>
+
+      <p>
+        There is a man behind it:
+        <a href="mailto:romankoshchei@gmail.com">Hire the man.</a>
+      </p>
+
+      <a href="https://twitter.com/roman_koshchei" target="_blank">Twitter</a>
+
+      <h3>Articles</h3>
+      <ul>
+        <li><a href="/#progressive-enhancement">Progressive enhancement</a></li>
+      </ul>
+
+      <h4 id="progressive-enhancement">Progressive enhancement</h4>
+      <p>
+        Progressive enhancement is mostly when user <b>without</b> javascript
+        can get <b></b>good</b> experience and <b>with</b> javascript <b>even better</b> one. It can also
+        be applied to some modern CSS features.
+      </p>
+      <p>It allows to reach more people, because javascript can be unavailable. 
+        Here is a good article about it: 
+        <a href="https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available">A handful of reasons JavaScript won't be available</a> 
+        by Piccalilli.
+      </p>
+      <p>To develop Progressive enhancement websites you want to start by implementing main functionality without javascript. Website should be working fine without it. After this gets done you can bring javascript to add additional helpers and so on. HTMX style (when you return partial html from server) can come very handy as you will be able to remove additional logic from your javascript. 
+
+      </p>
+      <p>Progressive enhancement not only will make your website accessible to more people, it also will make them simpler. You will less blow up your client with ton of javascript, because you will value your time to develop it. Reducing complexity can be called a side effect of Progressive enhancement. As well it will force your designer to not create some stupid, unrealistic and pixel perfect design.</p>
     </main>
     <footer></footer>
   </body>
