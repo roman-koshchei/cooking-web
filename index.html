@@ -43,6 +43,7 @@
       <ul>
         <li><a href="/#progressive-enhancement">Progressive enhancement</a></li>
         <li><a href="/#seo-checklist">SEO checklist</a></li>
+        <li><a href="/#how-to-ssh">How to SSH</a></li>
       </ul>
 
       <h4 id="progressive-enhancement">Progressive enhancement</h4>
@@ -105,6 +106,38 @@
       <label><input type="checkbox" />custom favicon</label>
       <label><input type="checkbox" />og and twitter meta tags</label>
       <label><input type="checkbox" />www subdomain</label>
+
+      <hr />
+
+      <h4 id="how-to-ssh">How to SSH</h4>
+      <p>
+        Eventually you will need to SSH at least a little bit. So here is simple
+        guides for 2 most popular situations.
+      </p>
+      <p>For Git:</p>
+      <ol>
+        <li>
+          Generate SSH keys for your local machine (with some cli based on OS)
+        </li>
+        <li>
+          Add public key to your git service (GitHub, GitLab, BitBucket, etc.)
+        </li>
+        <li>
+          Clone project with SSH url or change url of existing local repo to SSH
+          one
+        </li>
+      </ol>
+      <p>For connecting to remote server:</p>
+      <ol>
+        <li>
+          Install OpenSSH or alternative on the server (probably preinstalled)
+        </li>
+        <li>Obtain IP address of the server</li>
+        <li>Run <kbd>ssh {username}@{id}</kbd> from your machine</li>
+      </ol>
+      <p>
+        That's it, steps are easily searchable on the internet to get commands.
+      </p>
     </main>
     <footer></footer>
   </body>
