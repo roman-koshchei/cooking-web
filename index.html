@@ -1,151 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css"
-    />
 
-    <title>Cooking Web</title>
-    <meta
-      name="description"
-      content="Writings about things that will help you to develop for web. The website aims to be straight to the point instead of poems."
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css" />
 
-    <meta name="robots" content="follow, index" />
-    <link rel="canonical" href="https://www.cookingweb.dev/" />
-  </head>
-  <body>
-    <header></header>
-    <main
-      style="
+  <title>Cooking Web</title>
+  <meta name="description"
+    content="Writings about things that will help you to develop for web. The website aims to be straight to the point instead of poems." />
+
+  <meta name="robots" content="follow, index" />
+  <link rel="canonical" href="https://www.cookingweb.dev/" />
+</head>
+
+<body>
+  <header></header>
+  <main style="
         max-width: 768px;
         margin: auto;
         padding-left: 1rem;
         padding-right: 1rem;
-      "
-    >
-      <hgroup>
-        <h1>Time to cook the Web!</h1>
-        <h2>
-          Writings about things that will help you to develop for web. The
-          website aims to be straight to the point instead of poems.
-        </h2>
-      </hgroup>
+      ">
+    <hgroup>
+      <h1>Time to cook the Web!</h1>
+      <h2>
+        Writings about things that will help you to develop for web. The
+        website aims to be straight to the point instead of poems.
+      </h2>
+    </hgroup>
 
-      <p>
-        There is a man behind it:
-        <a href="mailto:romankoshchei@gmail.com">Hire the man.</a>
-      </p>
+    <p>
+      There is a man behind it:
+      <a href="mailto:romankoshchei@gmail.com">Hire the man.</a>
+    </p>
 
-      <a href="https://twitter.com/roman_koshchei" target="_blank">Twitter</a>
-      <a href="https://www.flurium.com/" target="_blank">
-        Team website to hire us
-      </a>
+    <a href="https://twitter.com/roman_koshchei" target="_blank">Twitter</a>
+    <a href="https://www.flurium.com/" target="_blank">
+      Team website to hire us
+    </a>
 
-      <h3>Articles</h3>
-      <ul>
-        <li><a href="/#progressive-enhancement">Progressive enhancement</a></li>
-        <li><a href="/#seo-checklist">SEO checklist</a></li>
-        <li><a href="/#how-to-ssh">How to SSH</a></li>
-      </ul>
+    <h3>Articles</h3>
+    <ul>
+      <li><a href="/#old-laptop-to-server">Old laptop to server</a></li>
+      <li><a href="/#progressive-enhancement">Progressive enhancement</a></li>
+      <li><a href="/#seo-checklist">SEO checklist</a></li>
+      <li><a href="/#how-to-ssh">How to SSH</a></li>
+      <li><a href="/#how-to-ssh">How to SSH</a></li>
+    </ul>
 
-      <h4 id="progressive-enhancement">Progressive enhancement</h4>
-      <p>
-        Progressive enhancement is mostly when users <b>without</b> JavaScript
-        can get a <b>good</b> experience, and <b>with</b> JavaScript,
-        <b>even better</b> one. It can also be applied to some modern CSS
-        features.
-      </p>
-      <p>
-        It allows for reaching more people, because JavaScript can be
-        unavailable. Here is a good article about it:
-        <a
-          href="https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available"
-          >A handful of reasons JavaScript won't be available</a
-        >
-        by Piccalilli.
-      </p>
-      <p>
-        To develop Progressive enhancement websites, you want to start by
-        implementing the main functionality without JavaScript. The website
-        should be working fine without it. After this gets done, you can use
-        JavaScript to add additional helpers and so on. HTMX style (when you
-        return partial HTML from the server) can come in very handy as you will
-        be able to remove additional logic from your JavaScript.
-      </p>
-      <p>
-        Progressive enhancement will not only make your website accessible to
-        more people, but it will also make it simpler. You will not blow up your
-        client with a ton of JavaScript because you will value your time spent
-        developing it. Reducing complexity can be called a side effect of
-        Progressive enhancement. As well, it will force your designer to not
-        create some stupid, unrealistic and pixel-perfect design.
-      </p>
 
-      <hr />
+    <h4 id="old-laptop-to-server">Old laptop to server</h4>
+    <p>
+      I got an old laptop for free and using it as a home lab. So as a web developer the first thing I want to figure
+      out is how to use own hardware to host servers.
 
-      <h4 id="seo-checklist">SEO checklist</h4>
-      <label><input type="checkbox" />canonical meta tag to https</label>
-      <label><input type="checkbox" />meta title (max 60 letters)</label>
-      <label><input type="checkbox" />meta description (max 160 letters)</label>
-      <label>
-        <input type="checkbox" />meta image (1200px width and 630px height)
-      </label>
-      <label><input type="checkbox" />schema.org</label>
-      <label><input type="checkbox" />minify js and css files</label>
-      <label><input type="checkbox" />cache js and css files</label>
-      <label>
-        <input type="checkbox" />compress text files (including html outputs)
-      </label>
-      <label><input type="checkbox" />add alt to all images</label>
-      <label><input type="checkbox" />h1 should not equal meta title</label>
-      <label><input type="checkbox" />sitemap.xml</label>
-      <label><input type="checkbox" />robots.txt</label>
-      <label>
-        <input type="checkbox" />descriptions and titles must be unique for each
-        page
-      </label>
-      <label><input type="checkbox" />defer scripts</label>
-      <label><input type="checkbox" />custom favicon</label>
-      <label><input type="checkbox" />og and twitter meta tags</label>
-      <label><input type="checkbox" />www subdomain</label>
+      I created a `deploy-tool` repository where I keep files for tests of deploying websites.
+      I decided to try with Nix Shell instead of Docker, so I get to squeeze more resources out of computer.
 
-      <hr />
+      But here is overall steps to do it (at the current limit of my knowledge):
+      - build web application
+      - install dependencies on server (done with Nix Shell in my case, can be done with Docker or just apt)
+      - run application on local network, not only single machine (aka 0.0.0.0 or explicitly local ip, like
+      192.168.31.10)
+      - now you can access your website inside of local network
+      - go to your router and forward router's port 80 for TCP to the ip of your server and port that app is running on
+      - your probably want to forward port 443 for HTTPS
+      - now you should access your website with public IP address, [check whatismyip.com](https://www.whatismyip.com/)
+      to
+      find out.
 
-      <h4 id="how-to-ssh">How to SSH</h4>
-      <p>
-        Eventually you will need to SSH at least a little bit. So here is simple
-        guides for 2 most popular situations.
-      </p>
-      <p>For Git:</p>
-      <ol>
-        <li>
-          Generate SSH keys for your local machine (with some cli based on OS)
-        </li>
-        <li>
-          Add public key to your git service (GitHub, GitLab, BitBucket, etc.)
-        </li>
-        <li>
-          Clone project with SSH url or change url of existing local repo to SSH
-          one
-        </li>
-      </ol>
-      <p>For connecting to remote server:</p>
-      <ol>
-        <li>
-          Install OpenSSH or alternative on the server (probably preinstalled)
-        </li>
-        <li>Obtain IP address of the server</li>
-        <li>Run <kbd>ssh {username}@{id}</kbd> from your machine</li>
-      </ol>
-      <p>
-        That's it, steps are easily searchable on the internet to get commands.
-      </p>
-    </main>
-    <footer></footer>
-  </body>
+      That's what I currently was able to achieve.
+      Next steps will be setting up a reverse proxy, so I can host more than 1 public website on single IP.
+
+      As well reverse proxy like [Caddy](https://caddyserver.com/) can handle SSL certificates for my.
+
+      Potentially you can buy several static IPs and point each one for each application instead of using reverse proxy.
+      It's not a bad idea, especially if your internet provider gives you quite cheap IPs (mine is 1$ for IP in
+      Ukraine).
+
+      After I will be able to use existing tools I plan to create own tool to make it all more simpler/automated than
+      it's currently is.
+      Maybe even competitor to [Coolify](https://coolify.io/) and [Kamal](https://kamal-deploy.org/). We will see.
+    </p>
+
+    <hr>
+
+
+    <h4 id="progressive-enhancement">Progressive enhancement</h4>
+    <p>
+      Progressive enhancement is mostly when users <b>without</b> JavaScript
+      can get a <b>good</b> experience, and <b>with</b> JavaScript,
+      <b>even better</b> one. It can also be applied to some modern CSS
+      features.
+    </p>
+    <p>
+      It allows for reaching more people, because JavaScript can be
+      unavailable. Here is a good article about it:
+      <a href="https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available">A handful of reasons
+        JavaScript won't be available</a>
+      by Piccalilli.
+    </p>
+    <p>
+      To develop Progressive enhancement websites, you want to start by
+      implementing the main functionality without JavaScript. The website
+      should be working fine without it. After this gets done, you can use
+      JavaScript to add additional helpers and so on. HTMX style (when you
+      return partial HTML from the server) can come in very handy as you will
+      be able to remove additional logic from your JavaScript.
+    </p>
+    <p>
+      Progressive enhancement will not only make your website accessible to
+      more people, but it will also make it simpler. You will not blow up your
+      client with a ton of JavaScript because you will value your time spent
+      developing it. Reducing complexity can be called a side effect of
+      Progressive enhancement. As well, it will force your designer to not
+      create some stupid, unrealistic and pixel-perfect design.
+    </p>
+
+    <hr />
+
+    <h4 id="seo-checklist">SEO checklist</h4>
+    <label><input type="checkbox" />canonical meta tag to https</label>
+    <label><input type="checkbox" />meta title (max 60 letters)</label>
+    <label><input type="checkbox" />meta description (max 160 letters)</label>
+    <label>
+      <input type="checkbox" />meta image (1200px width and 630px height)
+    </label>
+    <label><input type="checkbox" />schema.org</label>
+    <label><input type="checkbox" />minify js and css files</label>
+    <label><input type="checkbox" />cache js and css files</label>
+    <label>
+      <input type="checkbox" />compress text files (including html outputs)
+    </label>
+    <label><input type="checkbox" />add alt to all images</label>
+    <label><input type="checkbox" />h1 should not equal meta title</label>
+    <label><input type="checkbox" />sitemap.xml</label>
+    <label><input type="checkbox" />robots.txt</label>
+    <label>
+      <input type="checkbox" />descriptions and titles must be unique for each
+      page
+    </label>
+    <label><input type="checkbox" />defer scripts</label>
+    <label><input type="checkbox" />custom favicon</label>
+    <label><input type="checkbox" />og and twitter meta tags</label>
+    <label><input type="checkbox" />www subdomain</label>
+
+    <hr />
+
+    <h4 id="how-to-ssh">How to SSH</h4>
+    <p>
+      Eventually you will need to SSH at least a little bit. So here is simple
+      guides for 2 most popular situations.
+    </p>
+    <p>For Git:</p>
+    <ol>
+      <li>
+        Generate SSH keys for your local machine (with some cli based on OS)
+      </li>
+      <li>
+        Add public key to your git service (GitHub, GitLab, BitBucket, etc.)
+      </li>
+      <li>
+        Clone project with SSH url or change url of existing local repo to SSH
+        one
+      </li>
+    </ol>
+    <p>For connecting to remote server:</p>
+    <ol>
+      <li>
+        Install OpenSSH or alternative on the server (probably preinstalled)
+      </li>
+      <li>Obtain IP address of the server</li>
+      <li>Run <kbd>ssh {username}@{id}</kbd> from your machine</li>
+    </ol>
+    <p>
+      That's it, steps are easily searchable on the internet to get commands.
+    </p>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
