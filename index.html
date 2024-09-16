@@ -33,25 +33,59 @@
 
     <p>
       There is a man behind it:
-      <a href="mailto:romankoshchei@gmail.com">Hire the man.</a>
+      <a href="mailto:romankoshchei@gmail.com">Contact the man</a>,
+      <a href="https://twitter.com/roman_koshchei" target="_blank">X</a>,
+      <a href="https://www.flurium.com/" target="_blank">
+        Portfolio
+      </a>
     </p>
 
-    <a href="https://twitter.com/roman_koshchei" target="_blank">Twitter</a>
-    <a href="https://www.flurium.com/" target="_blank">
-      Team website to hire us
-    </a>
+    <h2 id="cloud">Cloud</h2>
+    <p>
+      I am interested in building own cloud, that could be hosted on own hardware.
+      Aka everyone-loved automated deploys, ideally with 0 downtime.
+      As well as optimize and squeeze performance from their own hardware.
+    </p>
+    <p>
+      For example, the current setup of my homelab uses NixOS with systemd services instead
+      of Docker containers or virtual machines.
+      Because isolation is mostly a requirement of the cloud, as they need to serve many people,
+      but if you own your hardware or VPS, then there is no one except you anyway.
+    </p>
+    <p>
+      List of services' links that run on my home cloud. They are only available
+      when I am awake and turn that old laptop on. Because I currently can't run
+      homelab fulltime, but plan to soon with electricity shutdowns prevention
+      (run electricity through batteries).
+    </p>
 
-    <h3>Articles</h3>
+    <ul>
+      <li>
+        <a href="https://cloud.cookingweb.dev/">cloud.cookingweb.dev</a>
+        - Place where cloud UI must come later
+      </li>
+      <li>
+        <a href="https://feedhub.cookingweb.dev/">feedhub.cookingweb.dev</a>
+        - Feedback app that uses GitHub issues as store
+      </li>
+      <li>
+        <a href="https://pocketbase.cookingweb.dev/">pocketbase.cookingweb.dev</a>
+        - Pocketbase instance
+      </li>
+    </ul>
+
+    <hr>
+
+    <h2>Articles</h2>
     <ul>
       <li><a href="/#old-laptop-to-server">Old laptop to server</a></li>
       <li><a href="/#progressive-enhancement">Progressive enhancement</a></li>
       <li><a href="/#seo-checklist">SEO checklist</a></li>
       <li><a href="/#how-to-ssh">How to SSH</a></li>
-      <li><a href="/#how-to-ssh">How to SSH</a></li>
     </ul>
 
 
-    <h4 id="old-laptop-to-server">Old laptop to server</h4>
+    <h3 id="old-laptop-to-server">Old laptop to server</h3>
     <p>
       I got an old laptop for free and using it as a home lab. So as a web developer the first thing I want to figure
       out is how to use own hardware to host servers.
@@ -74,7 +108,7 @@
       That's what I currently was able to achieve.
       Next steps will be setting up a reverse proxy, so I can host more than 1 public website on single IP.
 
-      As well reverse proxy like [Caddy](https://caddyserver.com/) can handle SSL certificates for my.
+      As well reverse proxy like [Caddy](https://caddyserver.com) can handle SSL certificates for my.
 
       Potentially you can buy several static IPs and point each one for each application instead of using reverse proxy.
       It's not a bad idea, especially if your internet provider gives you quite cheap IPs (mine is 1$ for IP in
@@ -82,13 +116,13 @@
 
       After I will be able to use existing tools I plan to create own tool to make it all more simpler/automated than
       it's currently is.
-      Maybe even competitor to [Coolify](https://coolify.io/) and [Kamal](https://kamal-deploy.org/). We will see.
+      Maybe even competitor to [Coolify](https://coolify.io) and [Kamal](https://kamal-deploy.org). We will see.
     </p>
 
     <hr>
 
 
-    <h4 id="progressive-enhancement">Progressive enhancement</h4>
+    <h3 id="progressive-enhancement">Progressive enhancement</h3>
     <p>
       Progressive enhancement is mostly when users <b>without</b> JavaScript
       can get a <b>good</b> experience, and <b>with</b> JavaScript,
@@ -121,7 +155,7 @@
 
     <hr />
 
-    <h4 id="seo-checklist">SEO checklist</h4>
+    <h3 id="seo-checklist">SEO checklist</h3>
     <label><input type="checkbox" />canonical meta tag to https</label>
     <label><input type="checkbox" />meta title (max 60 letters)</label>
     <label><input type="checkbox" />meta description (max 160 letters)</label>
@@ -149,7 +183,7 @@
 
     <hr />
 
-    <h4 id="how-to-ssh">How to SSH</h4>
+    <h3 id="how-to-ssh">How to SSH</h3>
     <p>
       Eventually you will need to SSH at least a little bit. So here is simple
       guides for 2 most popular situations.
