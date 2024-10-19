@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css" />
+
+  <title>Cooking Web</title>
+  <meta name="description"
+    content="Writings about things that will help you to develop for web. The website aims to be straight to the point instead of poems." />
+
+  <meta name="robots" content="follow, index" />
+  <link rel="canonical" href="https://www.cookingweb.dev/" />
+</head>
+
+<body>
+  <header></header>
+  <main style="
+        max-width: 768px;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      ">
+    <hgroup>
+      <h1>Email Switch</h1>
+      <h2>Self-hosted email aggregation API. When 1 provider goes down, switch to another one.</h2>
+    </hgroup>
+
+    <a href="https://github.com/roman-koshchei/email-switch" role="button">GitHub repository</a>
+    <a href="https://github.com/roman-koshchei/email-switch/pkgs/container/email-switch" role="button">Docker
+      container</a>
+
+    <p>
+      Main goal is to avoid getting downtime when email service you use goes down.
+    </p>
+
+    <p>
+      Like it happened with
+      <a href="https://postmarkapp.com/blog/outbound-smtp-outage-on-september-15-2024" target="_blank"
+        rel="noopener noreferrer">
+        Postmark
+      </a>,
+      sometimes
+      <a href="https://resend.com/blog/incident-report-for-february-21-2024" target="_blank" rel="noopener noreferrer">
+        Resend
+      </a> and other providers.
+    </p>
+    <p>
+      Currently I plan to support only emails with single receiver (or small list), maybe later support for broadcasting
+      (thousands of receivers) will come.
+    </p>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
